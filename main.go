@@ -11,20 +11,15 @@ import (
 type solver func(input []string) int
 
 var solvers = map[string]solver{
-	"01A": solve01A,
-	"01B": solve01B,
-	"02A": solve02A,
-	"02B": solve02B,
-	"03A": solve03A,
-	"03B": solve03B,
-	"04A": solve04A,
-	"04B": solve04B,
-	"05A": solve05A,
-	"05B": solve05B,
-	"06A": solve06A,
-	"06B": solve06B,
-	"07A": solve07A,
-	"07B": solve07B,
+	"01A": solve01A, "01B": solve01B,
+	"02A": solve02A, "02B": solve02B,
+	"03A": solve03A, "03B": solve03B,
+	"04A": solve04A, "04B": solve04B,
+	"05A": solve05A, "05B": solve05B,
+	"06A": solve06A, "06B": solve06B,
+	"07A": solve07A, "07B": solve07B,
+	"08A": solve08A, "08B": solve08B,
+	"09A": solve09A, "09B": solve09B,
 }
 
 func runSolver(id, env string) {
