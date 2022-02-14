@@ -20,6 +20,8 @@ var solvers = map[string]solver{
 	"07A": solve07A, "07B": solve07B,
 	"08A": solve08A, "08B": solve08B,
 	"09A": solve09A, "09B": solve09B,
+	"10A": solve10A, "10B": solve10B,
+	"11A": solve11A, "11B": solve11B,
 }
 
 func runSolver(id, env string) {
