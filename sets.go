@@ -20,6 +20,11 @@ func (s Set) Remove(k interface{}) Set {
 	return s
 }
 
+func (s Set) Has(k interface{}) bool {
+	_, ok := s[k]
+	return ok
+}
+
 func (s Set) AddAll(o Set) Set {
 	for k := range o {
 		s[k] = struct{}{}
