@@ -26,6 +26,7 @@ var solvers = map[string]solver{
 	"13A": solve13A, "13B": solve13B,
 	"14A": solve14A, "14B": solve14B,
 	"15A": solve15A, "15B": solve15B,
+	"16A": solve16A, "16B": solve16B,
 }
 
 func runSolver(id, env string) {
@@ -48,7 +49,7 @@ func runSolver(id, env string) {
 func main() {
 	log.SetFlags(log.Lshortfile)
 	for _, id := range os.Args[1:] {
-		//runSolver(id, "test")
+		runSolver(id, "test")
 		runSolver(id, "prod")
 	}
 }
